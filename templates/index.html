@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Decision Tree  </title>
+     <style>
+          body{
+               background-color: skyblue;
+               color:white ;
+               overflow: scroll;
+          }
+          fieldset{
+               border-radius: 20px;
+               align-items: center;
+               justify-content: center;
+               text-align: center;
+               width: auto;
+               background-color: #002366;
+               box-shadow: 0 0 20px  #002366;
+               border: 5px solid white;
+          }
+     </style>
+</head>
+<body>
+     <marquee behavior="" direction="circular" style="color:#002366;font-size: large;">Vikalp from Zhcet amu</marquee>
+     <h1 style="color: black; align-items: center;text-align: center;">Decision tree on bill_authenication dataset  </h1>
+     
+
+     <fieldset>
+          <h2><a href="https://drive.google.com/file/d/1nhaeqhUTS1M4OS2cJbZXVanJJHhXx8f_/view?usp=sharing" style="float: right;color: red;">Dataset</a></h2>
+          <form action="/data"    method="post"    style="margin-top: 5px;">
+               <div class="sepal_length">
+                    <label for="Variance" name="Variance" id="Variance" style="font-size: x-large;">Enter the Variance:</label>
+                    <input type="tel" name="Variance"  required="required"  placeholder="Ex-2.5"   id="Variance" style="border-radius: 20px; width: 500px; height: 50px; border: 2px solid #002366 ;"> 
+                </div>
+                <br>
+                <br>
+                <div class="sepal_width">
+                    <label for="Skewness" name="Skewness" id="Skewness" style="font-size: x-large;">Enter the Skewness:</label>
+                    <input type="tel" name="Skewness" id="Skewness" required="required"  placeholder="Ex-2.5" style="border-radius: 20px; width: 500px; height: 50px;border: 2px solid #002366 ;"> 
+                </div>
+                <br>
+                <br>
+                <div class="petal_length">
+                    <label for="Curtosis" name="Curtosis" id="Curtosis" style="font-size: x-large;">Enter the Curtosis	:</label>
+                    <input type="tel" name="Curtosis" id="Curtosis" required="required"   placeholder="Ex-2.5" style="border-radius: 20px; width: 500px; height: 50px;border: 2px solid #002366 ;"> 
+                </div>
+                <br>
+                <br>
+                <div class="petal_width">
+                    <label for="Entropy" name="Entropy" id="Entropy" style="font-size: x-large;">Enter the Entropy:</label>
+                    <input type="tel" name="Entropy" id="Entropy" required="required"   placeholder="Ex-2.5"  style="border-radius: 20px; width: 500px; height: 50px;border: 2px solid #002366 ;"> 
+                </div>
+                <br>
+                <br>
+                <input type="submit" style="border-radius: 20px; background-color: #281E5D; margin-left: 300px;height: 50px;color: white;cursor: pointer;" >
+                
+          </form>
+          <fieldset class="field2" style="margin-top: 10px;border: 5px solid white;">
+               <div><h1>Class:</h1></div>
+               <div><h2 style="color: red;">{{result}}</h2></div>
+          </fieldset>
+         
+     </fieldset>
+</body>
+</html>
